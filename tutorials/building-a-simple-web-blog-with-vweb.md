@@ -331,6 +331,14 @@ Create `new.html`:
 </html>
 ```
 
+add an associated `new()` action in `blog.v`:
+```v
+pub fn (mut app App) new() vweb.Result {
+	return $vweb.html()
+}
+```
+
+and an action to receive submitted articles:
 ```v
 pub fn (mut app App) new_article() vweb.Result {
 	title := app.vweb.form['title']

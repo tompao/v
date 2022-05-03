@@ -72,3 +72,15 @@ pub fn (mut app App) articles() {
 fn (mut app App) time() {
 	app.vweb.text(time.now().format())
 }
+
+struct Article {
+	id    int
+	title string
+	text  string
+}
+
+pub fn (app &App) find_all_articles() []Article {
+	return sql app.db {
+		select from Article
+	}
+}
