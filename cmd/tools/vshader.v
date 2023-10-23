@@ -38,7 +38,7 @@ const (
 		'metal_macos', // Metal on macOS (SOKOL_METAL)
 		'metal_ios', // Metal on iOS devices (SOKOL_METAL)
 		'metal_sim', // Metal on iOS simulator (SOKOL_METAL)
-		'wgsl', // WebGPU (SOKOL_WGPU)
+		//'wgsl', // WebGPU (SOKOL_WGPU)
 	]
 	default_slangs   = [
 		'glsl330',
@@ -49,7 +49,7 @@ const (
 		'metal_macos',
 		'metal_ios',
 		'metal_sim',
-		'wgsl',
+		// 'wgsl',
 	]
 
 	shdc_version     = shdc_full_hash[0..8]
