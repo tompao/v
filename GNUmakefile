@@ -128,7 +128,7 @@ rebuild: clean all
 
 ifndef local
 latest_vc: $(VC)/.git/config
-	cd $(VC) && $(GITCLEANPULL) && git checkout 0a096d70d866d6eca56feeba5b48baf2f7163075
+	cd $(VC) && git checkout 0a096d70d866d6eca56feeba5b48baf2f7163075
 else
 latest_vc:
 	@echo "Using local vc"
